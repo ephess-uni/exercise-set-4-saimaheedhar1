@@ -3,10 +3,10 @@ from datetime import datetime
 
 
 def logstamp_to_datetime(datestr):
-    """
-    Your docstring here.  Replace the pass keyword below with your implementation.
-    """
-    pass
+    
+    required_format = '%Y-%m-%dT%H:%M:%S'
+    formatted_date = datetime.strptime(datestr, required_format)
+    return formatted_date
 
 
 # >>>> The code below will call your function and print the results
